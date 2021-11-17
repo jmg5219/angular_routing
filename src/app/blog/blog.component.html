@@ -1,0 +1,11 @@
+<h1>Blog Page</h1>
+<p>Welcome to the blog page. This is an Angular routing exercise</p>
+<hr />
+
+<div *ngFor="let blog of blogPosts">
+  <li>
+    <a routerLink="/post/{{ blog.id }}" routerLinkActive="active">{{
+      blog.title
+    }}</a>
+  </li>
+</div>
